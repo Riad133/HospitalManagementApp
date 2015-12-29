@@ -1,0 +1,42 @@
+﻿@model HospitalMangementApp.Models.Bed
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bed</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BedNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BedNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BedType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BedType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BedId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
